@@ -1,0 +1,181 @@
+<doctype html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>ToyChat</title>
+    <script src="js/testLab.js"></script>
+    <style>
+      .chatDisplay{
+        border: solid 1px;
+        border-color: saddlebrown;
+        height: 166px;
+        padding: 4px;
+      }
+      .clientContainer{
+        background: moccasin;
+        border: solid 1px;
+        height: 262px;
+        margin: 10px;
+        padding: 10px;
+        width: 400px;
+      }
+      .loginButton{
+        margin: auto;
+        width: 64px;
+      }
+
+      .loginContainer{
+        display:flex;
+        flex-direction: column;
+        margin: auto;
+        width: 60%;
+      }
+      .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .closed{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" id="masterToggle" value="Toggle">
+    <div class="wrapper">
+      <div class ="clientContainer">
+        <p class="status" id="status1">Not connected</p>
+        <div class="loginContainer" id="loginBox1">
+
+          <label for="loginIP1">Server IP Address:</label>
+          <input type="text" id="loginIP1">
+
+          <label for="loginName1">UserName:</label>
+          <input type="text" id="loginName1">
+
+          <label for="loginColor1">Pick User Color:</label>
+          <input type="color" id="loginColor1">
+          <input type="button" class="loginButton" value="Login" id="loginButton1">
+        </div>
+        <div class="chatContainer closed">
+          <p class="chatDisplay" id="chatDisplay1">Message1<br>Message1<br>Message1<br>Message1<br>Message1<br>Message1<br>Message1<br>Message1<br>Message1<br></p>
+          <input type="text" id="chatInput1">
+          <input type="button" id="sendButton1" value="Send">
+          <input type="button" id="logout1" value = "Disconnect">
+        </div>
+      </div>
+
+      <div class ="clientContainer">
+        <p class="status" id="status2">Not connected</p>
+        <div class="loginContainer" id="loginBox2">
+
+          <label for="loginIP2">Server IP Address:</label>
+          <input type="text" id="loginIP2">
+
+          <label for="loginName2">UserName:</label>
+          <input type="text" id="loginName2">
+
+          <label for="loginColor2">Pick User Color:</label>
+          <input type="color" id="loginColor2">
+          <input type="button" class="loginButton" value="Login" id="loginButton2">
+        </div>
+        <div class="chatContainer closed">
+          <p class="chatDisplay" id="chatDisplay2">Message2</p>
+          <input type="text" id="chatInput2">
+          <input type="button" id="sendButton2" value="Send">
+          <input type="button" id="logout2" value = "Disconnect">
+        </div>
+      </div>
+
+      <div class ="clientContainer">
+        <p class="status" id="status3">Not connected</p>
+        <div class="loginContainer" id="loginBox3">
+
+          <label for="loginIP3">Server IP Address:</label>
+          <input type="text" id="loginIP3">
+
+          <label for="loginName3">UserName:</label>
+          <input type="text" id="loginName3">
+
+          <label for="loginColor3">Pick User Color:</label>
+          <input type="color" id="loginColor3">
+          <input type="button" class="loginButton" value="Login" id="loginButton3">
+        </div>
+        <div class="chatContainer closed">
+          <p class="chatDisplay" id="chatDisplay3">Message3</p>
+          <input type="text" id="chatInput3">
+          <input type="button" id="sendButton3" value="Send">
+          <input type="button" id="logout3" value = "Disconnect">
+        </div>
+      </div>
+
+      <div class ="clientContainer">
+        <p class="status" id="status4">Not connected</p>
+        <div class="loginContainer" id="loginBox4">
+
+          <label for="loginIP4">Server IP Address:</label>
+          <input type="text" id="loginIP4">
+
+          <label for="loginName4">UserName:</label>
+          <input type="text" id="loginName4">
+
+          <label for="loginColor4">Pick User Color:</label>
+          <input type="color" id="loginColor4">
+          <input type="button" class="loginButton" value="Login" id="loginButton4">
+        </div>
+        <div class="chatContainer closed">
+          <p class="chatDisplay" id="chatDisplay4">Message4</p>
+          <input type="text" id="chatInput4">
+          <input type="button" id="sendButton4" value="Send">
+          <input type="button" id="logout4" value = "Disconnect">
+        </div>
+      </div>
+
+      <div class ="clientContainer">
+        <p class="status" id="status5">Not connected</p>
+        <div class="loginContainer" id="loginBox5">
+
+          <label for="loginIP5">Server IP Address:</label>
+          <input type="text" id="loginIP5">
+
+          <label for="loginName5">UserName:</label>
+          <input type="text" id="loginName5">
+
+          <label for="loginColor5">Pick User Color:</label>
+          <input type="color" id="loginColor5">
+          <input type="button" class="loginButton" value="Login" id="loginButton5">
+        </div>
+        <div class="chatContainer closed">
+          <p class="chatDisplay" id="chatDisplay5">Message5</p>
+          <input type="text" id="chatInput5">
+          <input type="button" id="sendButton5" value="Send">
+          <input type="button" id="logout5" value = "Disconnect">
+        </div>
+      </div>
+
+      <div class ="clientContainer">
+        <p class="status" id="status6">Not connected</p>
+        <div class="loginContainer" id="loginBox6">
+
+          <label for="loginIP6">Server IP Address:</label>
+          <input type="text" id="loginIP6">
+
+          <label for="loginName6">UserName:</label>
+          <input type="text" id="loginName6">
+
+          <label for="loginColor6">Pick User Color:</label>
+          <input type="color" id="loginColor6">
+          <input type="button" class="loginButton" value="Login" id="loginButton6">
+        </div>
+        <div class="chatContainer closed">
+          <p class="chatDisplay" id="chatDisplay6">Message6</p>
+          <input type="text" id="chatInput6">
+          <input type="button" id="sendButton6" value="Send">
+          <input type="button" id="logout6" value = "Disconnect">
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
