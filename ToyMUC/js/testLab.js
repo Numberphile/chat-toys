@@ -130,7 +130,6 @@ function init() {
       console.log(param);
 
       // Create the client.
-      console.log("hello?");
 
       // Initialize the client.
     }
